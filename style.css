@@ -42,7 +42,6 @@ h1 .heading {
     margin: 20px;
 }
 
-
 .nav-bar {
     display: flex;
     align-items: center;
@@ -148,8 +147,6 @@ h1 {
     border: 2px solid crimson;
 }
 
-
-
 .about .row {
     display: flex;
     align-items: center;
@@ -181,8 +178,6 @@ h1 {
     padding: 1rem 0;
     line-height: 1.8;
 }
-
-
 
 .menu .box-container {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -225,8 +220,6 @@ h1 {
     color: #fff;
 }
 
-
-
 .products .box-container {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
@@ -267,6 +260,10 @@ h1 {
     color: #fff;
 }
 
+.products .box-container .box:hover > * {
+    color: #fff;
+}
+
 .review .box-container {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
@@ -296,6 +293,10 @@ h1 {
     padding: 1rem 0;
     font-size: 2rem;
     color: black;
+}
+
+.feedback {
+    font-size: 20px;
 }
 
 .contact .row {
@@ -419,7 +420,7 @@ h1 {
     font-size: 2rem;
     color: #222021;
     border: 1px #222021 solid;
-    margin: 0.3rem;
+    margin-top: 80px;
     border-radius: 50%;
 }
 
@@ -481,6 +482,10 @@ h1 {
         display: inline-block;
     }
 
+    .logo {
+        display: none;
+    }
+
     .header .navbar {
         position: absolute;
         top: 100%;
@@ -525,5 +530,9 @@ h1 {
 @media (max-width: 450px) {
     html {
         font-size: 50%;
+    }
+
+    .logo {
+        display: none;
     }
 }
